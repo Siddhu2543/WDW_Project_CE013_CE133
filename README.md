@@ -10,11 +10,10 @@
 * _Using_ ___JavaScript___ _we are handling all the back-end work of the site._
 
 ### Flow
-*The project is having main front page having full description about the project and working flow. There are 3 types of quiz.*
+*The project is having main front page having full description about the project and working flow. User will get their score at the end of the quiz and additionally there can not be another option checked after another. There are 3 types of quiz.*
 1. There will be 15 seconds timer on each question 
 2. There will be 30 minutes time for completing the whole quiz
 3. The quiz will be time bound free(No timer at all)
-*User will get their score at the end of the quiz and additionally there can not be another option checked after another.*
 
 ### Watch Demo Video Here :-
 
