@@ -14,7 +14,7 @@
 1. There will be 15 seconds timer on each question 
 2. There will be 30 minutes time for completing the whole quiz
 3. The quiz will be time bound free(No timer at all)
-4. *User will get their score at the end of the quiz and additionally there can not be another option checked after another.*
+*User will get their score at the end of the quiz and additionally there can not be another option checked after another.*
 
 ### Watch Demo Video Here :-
 
