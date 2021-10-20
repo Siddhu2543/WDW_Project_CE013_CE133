@@ -1,5 +1,5 @@
 # WDW_Project_CE013_CE133
-*__WDW Termwork Project__ named __"[Let's Quiz](https://github.com/Siddhu2543/WDW_Project_CE013_CE133)"__ created by [Siddharth Vadgama ( CE133 )](https://github.com/Siddhu2543) and [Vikram Babariya ( CE013 )](https://github.com/AneriSonani09).*
+*__WDW Termwork Project__ named __"[Let's Quiz](https://github.com/Siddhu2543/WDW_Project_CE013_CE133)"__ created by [Siddharth Vadgama ( CE133 )](https://github.com/Siddhu2543) and [Vikram Babariya ( CE013 )](https://github.com/VikramBabariya).*
 
 ### Description
 *This is a project for WDW Teamwork submission. The project name is "Let's Quiz". Our project is based on*
