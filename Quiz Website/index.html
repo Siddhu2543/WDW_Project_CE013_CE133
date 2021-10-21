@@ -37,9 +37,9 @@
                         </ul>
                     </li>
                     <li class="nav-item contact">
-                        <a class="nav-link" href="#contact">Get in touch</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
-                    <li class="nav-item footer">
+                    <li class="nav-item">
                         <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#login">Login</a>
                     </li>
                 </ul>
@@ -74,7 +74,7 @@
                 </div>
                 <div class="modal-footer">
                     <span class="text-muted me-auto">New to our website <a class="text-decoration-none link-danger" href="#" data-bs-target="#signup" data-bs-toggle="modal" data-bs-dismiss="modal">Signup</a> here</span>
-                    <button type="button" class="btn btn-danger">Login</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Login</button>
                 </div>
             </div>
         </div>
@@ -86,14 +86,39 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="signuptitle">Signup</h5>
+                    <h5 class="modal-title ms-auto" id="signuptitle">Signup</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
 
+                    <form class="">
+                        <div class="input-group">
+                            <span class="input-group-text"><img src="./logo/person-check.svg" class="bg-danger rounded-3" alt="" height="25px" style="padding: 3px;"></span>
+                            <input type="text" class="form-control" id="username" placeholder="Name" required>
+                        </div><br>
+                        <div class="input-group">
+                            <span class="input-group-text"><img src="./logo/envelope.svg" class="bg-danger rounded-3" alt="" height="25px" style="padding: 3px;"></span>
+                            <input type="email" class="form-control" id="username" placeholder="Email" required>
+                        </div><br>
+                        <div class="input-group">
+                            <span class="input-group-text"><img src="./logo/person.svg" class="bg-danger rounded-3" alt="" height="25px" style="padding: 3px;"></span>
+                            <input type="text" class="form-control" id="username" placeholder="Username" required>
+                        </div><br>
+                        <div class="input-group">
+                            <span class="input-group-text"><img src="./logo/lock-solid.svg" class="bg-danger rounded-3" alt="" height="25px" style="padding: 3px;"></span>
+                            <input type="password" class="form-control" id="password" placeholder="New password" required>
+                        </div><br>
+                        <div class="input-group">
+                            <span class="input-group-text"><img src="./logo/lock-solid.svg" class="bg-danger rounded-3" alt="" height="25px" style="padding: 3px;"></span>
+                            <input type="password" class="form-control" id="password" placeholder="Retype New password" required>
+                        </div>
+                    </form>
+
+
                 </div>
                 <div class="modal-footer">
-                    <button class="btn btn-primary" data-bs-target="#login" data-bs-toggle="modal" data-bs-dismiss="modal">Login</button>
+                    <span class="text-muted me-auto">Already have an account <a class="text-decoration-none link-danger" href="#" data-bs-target="#login" data-bs-toggle="modal" data-bs-dismiss="modal">Login</a> here</span>
+                    <button class="btn btn-danger" data-bs-dismiss="modal">Signup</button>
                 </div>
             </div>
         </div>
@@ -189,7 +214,7 @@
     <section id="contact" class="container-fluid" style="height: auto;">
         <div class="container">
             <div class="text-center pt-5 pb-2">
-                <h2 class="head1">Get in Touch <span class="badge bg-secondary bg-danger">Contact the Team</span></h2>
+                <h2 class="head1"><span class="badge bg-secondary">Contact the Team</span></h2>
             </div>
             <div class="row">
                 <div class="col-lg-6 p-lg-5">
@@ -200,7 +225,7 @@
                                   <p>You are most welcome.</p>
                                 </blockquote>
                                 <figcaption class="blockquote-footer">
-                                  Hey there, we are always delighted to help you. Contact us whenever you want without any doubts...
+                                  Hey there, we are always delighted to help you. Contact us whenever you want...
                                 </figcaption>
                               </figure>
                         </dt>
@@ -264,7 +289,7 @@
         </div>
 
     </section>
-    <section id="footter" class="container-fluid bg-dark p-md-3" style="height: auto;">
+    <section id="footer" class="container-fluid bg-dark p-md-3" style="height: auto;">
         <div class="container text-center text-white">
             <div class="row">
                 <div class="col-lg-6 justify-content-lg-end"><strong>Created By <span class="badge bg-danger">Siddharth Vadgama</span> and <span class="badge bg-danger">Vikram Babariya</span></strong></div>
