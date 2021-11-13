@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Awesome Quiz App | CodingNepal</title>
     <link rel="stylesheet" href="css/style.css">
     <!-- FontAweome CDN Link for Icons-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
+
 <body>
+
+    <img id="mode" src="../logo/brightness-high.svg">
+
     <!-- start Quiz button -->
     <div class="start_btn"><button>Start Quiz</button></div>
 
@@ -71,6 +76,20 @@
         </div>
     </div>
 
+    <script>
+        let mode = document.querySelector("#mode");
+
+        mode.onclick = function() {
+            document.body.classList.toggle("light");
+
+            if (document.body.classList.contains("light")) {
+                mode.src = "../logo/moon.svg";
+            } else {
+                mode.src = "../logo/brightness-high.svg";
+            }
+        }
+    </script>
+
     <!-- Inside this JavaScript file I've inserted Questions and Options only -->
     <script src="js/questions.js"></script>
 
@@ -78,4 +97,5 @@
     <script src="js/script.js"></script>
 
 </body>
+
 </html>
