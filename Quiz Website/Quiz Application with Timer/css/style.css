@@ -8,6 +8,9 @@
     font-family: 'Poppins', sans-serif;
 }
 
+
+/* CSS Variables */
+
 :root {
     --primary-color: rgb(50, 50, 50);
     --secondry-color: whitesmoke;
