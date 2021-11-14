@@ -1,6 +1,6 @@
 /* importing google fonts */
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -8,28 +8,13 @@
     font-family: 'Poppins', sans-serif;
 }
 
-
-/* CSS Variables */
-
-:root {
-    --primary-color: rgb(50, 50, 50);
-    --secondry-color: whitesmoke;
-    --helping-color: #DC3545;
-}
-
-.light {
-    --primary-color: whitesmoke;
-    --secondry-color: rgb(50, 50, 50);
-}
-
 body {
-    background: var(--primary-color);
-    color: var(--secondry-color);
+    background: #007bff;
 }
 
 ::selection {
-    color: var(--secondry-color);
-    background: var(--helping-color);
+    color: #fff;
+    background: #007bff;
 }
 
 .start_btn,
@@ -40,7 +25,8 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .info_box.activeInfo,
@@ -55,18 +41,18 @@ body {
 .start_btn button {
     font-size: 25px;
     font-weight: 500;
-    color: var(--helping-color);
+    color: #007bff;
     padding: 15px 30px;
     outline: none;
     border: none;
     border-radius: 5px;
-    background: var(--primary-color);
+    background: #fff;
     cursor: pointer;
 }
 
 .info_box {
     width: 540px;
-    background: var(--primary-color);
+    background: #fff;
     border-radius: 5px;
     transform: translate(-50%, -50%) scale(0.9);
     opacity: 0;
@@ -97,7 +83,7 @@ body {
 
 .info_box .info-list .info span {
     font-weight: 600;
-    color: var(--helping-color);
+    color: #007bff;
 }
 
 .info_box .buttons {
@@ -119,13 +105,13 @@ body {
     border: none;
     outline: none;
     border-radius: 5px;
-    border: 1px solid var(--helping-color);
+    border: 1px solid #007bff;
     transition: all 0.3s ease;
 }
 
 .quiz_box {
     width: 550px;
-    background: var(--primary-color);
+    background: #fff;
     border-radius: 5px;
     transform: translate(-50%, -50%) scale(0.9);
     opacity: 0;
@@ -138,7 +124,7 @@ body {
     z-index: 2;
     height: 70px;
     padding: 0 30px;
-    background: var(--primary-color);
+    background: #fff;
     border-radius: 5px 5px 0 0;
     display: flex;
     align-items: center;
@@ -152,9 +138,9 @@ body {
 }
 
 .quiz_box header .timer {
-    color: #850000;
-    background: #ffcccc;
-    border: 1px solid #ffb8b8;
+    color: #004085;
+    background: #cce5ff;
+    border: 1px solid #b8daff;
     height: 45px;
     padding: 0 8px;
     border-radius: 5px;
@@ -189,12 +175,12 @@ body {
     bottom: 0px;
     left: 0px;
     height: 3px;
-    background: var(--helping-color);
+    background: #007bff;
 }
 
 section {
     padding: 25px 30px 20px 30px;
-    background: var(--primary-color);
+    background: #fff;
 }
 
 section .que_text {
@@ -208,7 +194,7 @@ section .option_list {
 }
 
 section .option_list .option {
-    background: var(--primary-color);
+    background: aliceblue;
     border: 1px solid #84c5fe;
     border-radius: 5px;
     padding: 8px 15px;
@@ -302,10 +288,10 @@ footer button {
     cursor: pointer;
     border: none;
     outline: none;
-    color: var(--primary-color);
+    color: #fff;
     border-radius: 5px;
-    background: var(--helping-color);
-    border: 1px solid var(--helping-color);
+    background: #007bff;
+    border: 1px solid #007bff;
     line-height: 10px;
     opacity: 0;
     pointer-events: none;
@@ -314,7 +300,7 @@ footer button {
 }
 
 footer button:hover {
-    background: var(--helping-color);
+    background: #0263ca;
 }
 
 footer button.show {
@@ -324,7 +310,7 @@ footer button.show {
 }
 
 .result_box {
-    background: var(--primary-color);
+    background: #fff;
     border-radius: 5px;
     display: flex;
     padding: 25px 30px;
@@ -340,7 +326,7 @@ footer button.show {
 
 .result_box .icon {
     font-size: 100px;
-    color: var(--helping-color);
+    color: #007bff;
     margin-bottom: 10px;
 }
 
@@ -376,25 +362,25 @@ footer button.show {
     border: none;
     outline: none;
     border-radius: 5px;
-    border: 1px solid var(--helping-color);
+    border: 1px solid #007bff;
     transition: all 0.3s ease;
 }
 
 .buttons button.restart {
-    color: var(--primary-color);
-    background: var(--helping-color);
+    color: #fff;
+    background: #007bff;
 }
 
 .buttons button.restart:hover {
-    background: var(--helping-color);
+    background: #0263ca;
 }
 
 .buttons button.quit {
-    color: var(--helping-color);
-    background: var(--primary-color);
+    color: #007bff;
+    background: #fff;
 }
 
 .buttons button.quit:hover {
-    color: var(--primary-color);
-    background: var(--helping-color);
+    color: #fff;
+    background: #007bff;
 }

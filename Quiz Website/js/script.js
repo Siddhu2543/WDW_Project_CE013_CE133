@@ -52,14 +52,3 @@ function bgDARK(e) {
         e.stopPropagation();
     }
 }
-
-var exampleModal = document.getElementById('exampleModal')
-exampleModal.addEventListener('show.bs.modal', function(event) {
-    var button = event.relatedTarget
-    var recipient = button.getAttribute('data-bs-whatever')
-    var modalTitle = exampleModal.querySelector('.modal-title')
-    var link = document.getElementById("link")
-
-    link.action = `Quiz Application with Timer/${recipient}.html`
-    modalTitle.textContent = 'Fill up the form to give ' + recipient.toUpperCase() + ' Quiz';
-})
