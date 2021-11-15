@@ -1,0 +1,20 @@
+.active {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-left: 3px solid rgb(255, 255, 255);
+}
+
+nav {
+    box-shadow: 2px 0px 5px black;
+}
+
+#info {
+    background-color: grey;
+}
+
+.head {
+    color: white;
+}
+
+.head1 {
+    color: black;
+}
