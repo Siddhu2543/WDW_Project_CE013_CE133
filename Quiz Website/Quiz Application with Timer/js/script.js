@@ -222,6 +222,10 @@ proceed.addEventListener("click", function() {
     }
 })
 
+const timeText = document.querySelector(".timer .time_left_txt");
+const timeCount = document.querySelector(".timer .timer_sec");
+
+
 let que = document.getElementById("que");
 
 let opt1 = document.getElementById("opt1")
@@ -233,7 +237,7 @@ let ops = document.getElementsByName("opt")
 
 let score = document.getElementById("score")
 
-let timer = document.getElementById("timer")
+let timer = document.getElementById("timer");
 let counter = document.getElementById("counter")
 
 let next = document.getElementById("next")
@@ -243,6 +247,7 @@ let i = 0
 let c = 1
 let total_que = 5
 let correct = 0;
+let cnt;
 
 let ques = document.getElementById("questions")
 
@@ -256,6 +261,8 @@ ques.addEventListener("show.bs.modal", function() {
     opt2.innerText = questions[i].options[1]
     opt3.innerText = questions[i].options[2]
     opt4.innerText = questions[i].options[3]
+
+    startTimer(15);
 })
 
 ques.addEventListener("hide.bs.modal", function() {
@@ -302,9 +309,15 @@ next.addEventListener("click", function() {
     opt2.disabled = false;
     opt3.disabled = false;
     opt4.disabled = false;
+
+
+    clearInterval(cnt);
+    startTimer(15);
+    timeText.textContent = "Time Left";
 })
 
 function checkAns(event) {
+    clearInterval(cnt);
     event.stopPropagation();
 
     temp_node1 = event.target
@@ -343,5 +356,66 @@ function checkAns(event) {
         opt4.classList.remove("btn-outline-primary")
         opt4.classList.add("btn-success")
         temp_node2 = opt4
+    }
+}
+
+// function startTimer(time) {
+//     let counter = setInterval(timer, 1000);
+
+//     function timer() {
+//         console.log("bug");
+//         time--;
+//         timer.textContent = time;
+//         if (time <= 0) {
+//             clearInterval(counter);
+//             timer.textContent = "Time Off";
+//         }
+//     }
+// }
+
+function startTimer(time) {
+    cnt = setInterval(timer, 1000);
+
+    function timer() {
+        timeCount.textContent = time; //changing the value of timeCount with time value
+        time--; //decrement the time value
+        if (time < 9) { //if timer is less than 9
+            let addZero = timeCount.textContent;
+            timeCount.textContent = "0" + addZero; //add a 0 before time value
+        }
+        if (time < 0) { //if timer is less than 0
+            clearInterval(cnt); //clear counter
+            timeText.textContent = "Time Off"; //change the time text to time off
+
+            opt1.disabled = true;
+            opt2.disabled = true;
+            opt3.disabled = true;
+            opt4.disabled = true;
+
+            if (i === total_que - 1)
+                finish.classList.remove("visually-hidden")
+            else
+                next.classList.remove("visually-hidden")
+
+
+            if (opt1.innerText == questions[i].answer) {
+                opt1.classList.remove("btn-outline-primary")
+                opt1.classList.add("btn-success")
+                temp_node2 = opt1
+            } else if (opt2.innerText == questions[i].answer) {
+                opt2.classList.remove("btn-outline-primary")
+                opt2.classList.add("btn-success")
+                temp_node2 = opt2
+            } else if (opt3.innerText == questions[i].answer) {
+                opt3.classList.remove("btn-outline-primary")
+                opt3.classList.add("btn-success")
+                temp_node2 = opt3
+            } else if (opt4.innerText == questions[i].answer) {
+                opt4.classList.remove("btn-outline-primary")
+                opt4.classList.add("btn-success")
+                temp_node2 = opt4
+            }
+
+        }
     }
 }
