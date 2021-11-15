@@ -52,3 +52,15 @@ function bgDARK(e) {
         e.stopPropagation();
     }
 }
+
+function toDSA() {
+    window.location.href = "Quiz Application with Timer/dsa.html"
+}
+
+function toDBMS() {
+    window.location.href = "Quiz Application with Timer/dbms.html"
+}
+
+function toDDC() {
+    window.location.href = "Quiz Application with Timer/ddc.html"
+}
