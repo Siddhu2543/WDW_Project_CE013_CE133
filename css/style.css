@@ -255,3 +255,13 @@ section .title::after {
         line-height: 38px;
     }
 }
+
+#poster{
+    height: 93vh;
+}
+
+@media (max-width: 768px){
+    #poster{
+        height: 50vh;
+    }
+}
