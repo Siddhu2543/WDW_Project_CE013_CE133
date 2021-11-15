@@ -211,15 +211,11 @@
 //     bottom_ques_counter.innerHTML = totalQueCounTag;  //adding new span tag inside bottom_ques_counter
 // }
 let form = document.getElementById("form");
-let proceed = document.getElementById("proceed");
-proceed.addEventListener("click", function() {
-    if (form.elements['fname'].value == "" || form.elements['lname'].value == "" || form.elements['email'].value == "" || form.elements['mNum'].value == "") {
-        window.alert("Fill up the mandatory fields...")
-        $("#start").modal('show')
-        $("#rules").modal('hide')
-    } else {
-        $("#rules").modal('show')
-    }
+
+form.addEventListener("submit", function(e){
+    e.preventDefault()
+    $("#start").modal('hide')
+    $("#rules").modal('show')
 })
 
 let que = document.getElementById("que");
