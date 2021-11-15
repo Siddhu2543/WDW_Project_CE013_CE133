@@ -256,11 +256,15 @@ section .title::after {
     }
 }
 
-#poster{
+#poster {
     height: 93vh;
 }
 
-@media (max-width: 768px){
+#poster:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
     #poster{
         height: 50vh;
     }
