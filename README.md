@@ -19,4 +19,4 @@
 
 "[Let's Quiz](https://drive.google.com/file/d/1xrXPizDS62P7l7HjIM-ClcVEQe0VQF1_/view?usp=sharing)"
 
-"[Go to the site](https://github.com/Siddhu2543/WDW_Project_CE013_CE133/Quiz Website)"
+"[Go to the site](https://github.com/Siddhu2543/WDW_Project_CE013_CE133/tree/main/Quiz%20Website)"
