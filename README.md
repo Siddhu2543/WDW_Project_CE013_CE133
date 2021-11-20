@@ -17,4 +17,6 @@
 
 ### Watch Demo Video Here :-
 
-"[Let's Quiz](https://drive.google.com/file/d/1xrXPizDS62P7l7HjIM-ClcVEQe0VQF1_/view?usp=sharing)"
+"[Let's Quiz](https://siddhu2543.github.io/WDW_Project_CE013_CE133/)"
+
+"[Let's Quiz Demo Video](https://drive.google.com/file/d/1bK1m-WuWn3yQeOP0LIr-qkDtYh7fHK2g/view?usp=sharing)"
